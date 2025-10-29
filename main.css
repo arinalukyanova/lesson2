@@ -1,0 +1,65 @@
+.person_name {
+    color:rgb(70, 182, 248);
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 40px;
+}
+.mainpage{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.block {
+    background-image: url(https://www.shutterstock.com/image-photo/powerful-male-lion-stands-proudly-260nw-2630721775.jpg);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    margin: 20px 50px 10px 17px;
+    padding: 40px 20px;
+    border: 20px black solid;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.block:hover{
+    width: 300px;
+    transition: ease-in-out 0.5s;
+}
+.text{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: translate(50px,50px);
+    z-index: 2;
+}
+.bigFlesBox{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    /*display: grid;
+    grid-template-columns: 40% 1fr 300px;
+    grid-template-rows: 1fr 1fr 1fr;*/
+    gap: 30px;
+
+}
+.blocki{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    flex-shrink: 0;
+}
+@media (max-width: 1024px) and (min-width: 768px){
+    .bigFlesBox{
+        flex-direction: column;
+    }
+    .person_name{
+        font-size: 24px;
+    }
+}
